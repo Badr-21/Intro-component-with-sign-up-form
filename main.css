@@ -30,7 +30,7 @@ body {
 }
 
 .container .left {
-    margin: 10rem 1rem 0 4rem;
+    margin: 15rem 1rem 0 7rem;
 }
 
 .container .left h1 {
@@ -42,18 +42,19 @@ body {
 }
 
 .container .left p {
+    padding-right: 3.5rem;
     font-size: 1rem;
     font-weight: 400;
     color: white;
 }
 
 .container .right {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
     padding-left: 1rem;
 }
 
 .container .right .free-try {
-    width: 26rem;
+    width: 30rem;
     padding: .5rem 0;
     font-size: 1rem;
     font-weight: 400;
@@ -71,7 +72,7 @@ body {
 }
 
 .container .right .form-container {
-    width: 26rem;
+    width: 30rem;
     padding: 2rem;
     background-color: white;
     border-radius: .5rem;
@@ -94,8 +95,8 @@ body {
 }
 
 .container .right .form-container .input {
-    width: 22rem;
-    padding: .6rem 0 .6rem 1.5rem;
+    width: 26rem;
+    padding: 1rem 0 1rem 1.5rem;
     outline: none;
     border: 0.0625rem solid var(--Grayish-Blue);
     border-radius: .25rem;
@@ -118,8 +119,8 @@ body {
 }
 
 .container .right .form-container .submit {
-    width: 22rem;
-    padding: .6rem 0;
+    width: 26rem;
+    padding: 1rem 0;
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
