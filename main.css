@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*## Colors
+    ### */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /*### Accent*/
+    --Blue: hsl(248, 32%, 49%);
+    /*### Neutral*/
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Red) url("images/bg-intro-desktop.png") no-repeat left top /cover;
+}
+
+.container {
+    width: 100vw;
+    display: flex
+}
+
+.container > section  {
+    width: 50%;
+}
+
+.container .left {
+    margin: 10rem 1rem 0 4rem;
+}
+
+.container .left h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    margin-bottom: .8rem;
+}
+
+.container .left p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.container .right {
+    margin: 2rem 0 0 0;
+    padding-left: 1rem;
+}
+
+.container .right .free-try {
+    width: 26rem;
+    padding: .5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    background-color: var(--Blue);
+    border-radius: .5rem;
+    box-shadow: 0 .4rem 0rem rgba(0, 0, 0, .1);
+    margin-bottom: 1rem;
+}
+
+.container .right .free-try span {
+    font-weight: 500;
+    color: white;
+}
+
+.container .right .form-container {
+    width: 26rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 .4rem 0rem rgba(0, 0, 0, .1);
+}
+
+.container .right .form-container form > div {
+    height: auto;
+    margin-bottom: -.8rem;
+}
+
+.container .right .form-container form > div p {
+    margin: .5rem 0 -.6rem 0;
+    text-align: right;
+    color: var(--Red);
+}
+
+.container .right .form-container .invalid {
+    position: relative;
+}
+
+.container .right .form-container .input {
+    width: 22rem;
+    padding: .6rem 0 .6rem 1.5rem;
+    outline: none;
+    border: 0.0625rem solid var(--Grayish-Blue);
+    border-radius: .25rem;
+}
+
+.container .right .form-container .input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container .right .form-container .input:focus {
+    border-color: var(--Blue);
+}
+
+.container .right .form-container .invalid::after {
+    content: url(images/icon-error.svg);
+    position: absolute;
+    right: 1.5rem;
+    top: .4rem;
+}
+
+.container .right .form-container .submit {
+    width: 22rem;
+    padding: .6rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--Green);
+    margin-bottom: .5rem;
+    box-shadow: 0 .15rem 0rem rgba(35, 129, 88, 0.973);
+}
+
+.container .right .form-container p {
+    font-size: .6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.container .right .form-container p a {
+    color: var(--Red);
+    text-decoration: none;
+}
+
+@media(hover: hover) {
+    .container .right .form-container .submit:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        padding: 5rem 0 3rem;
+    }
+
+    .container > section  {
+        width: 100%;
+    }
+    
+    .container .left {
+        margin: 0 0 2rem;
+    }
+
+    .container .left h1 {
+        font-size: 1.9rem;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .container .left p {
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .container .right {
+        margin: 0;
+        padding: 0 .6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .right .free-try {
+        width: calc(100% - 1.2rem);
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .container .right .form-container {
+        width: calc(100% - 1.2rem);
+        padding: 2rem 1.2rem 1.5rem;
+        box-shadow: 0 .4rem 0rem rgba(0, 0, 0, .1);
+    }
+
+    .container .right .form-container form > div {
+        margin-bottom: -.8rem;
+    }
+
+    .container .right .form-container .input {
+        width: 100%;
+        padding: .8rem 0 .8rem 1.5rem;
+    }
+
+    .container .right .form-container .submit {
+        width: 100%;
+        padding: 0;
+        height: 2.6rem;
+        margin-bottom: .8rem;
+    }
+
+    .container .right .form-container p {
+        font-size: .75rem;
+        padding: 0 .8rem;
+        text-align: center;
+        color: var(--Grayish-Blue);
+    }
+}
